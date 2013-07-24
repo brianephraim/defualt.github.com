@@ -5,7 +5,7 @@ tagline: Making stuff up
 ---
 {% include JB/setup %}
 
-This is the home page in a blog hosted on [GitHub](http://defualt.github.io/).  The blog was created with the [Jekyll](http://jekyllrb.com/) blogging framework, with guidance from [jekyllbootstrap.com](http://jekyllbootstrap.com/).
+This is the home page in a blog hosted on [GitHub](http://defualt.github.io/).  The blog was created with the [Jekyll](http://jekyllrb.com/) framework, with guidance from [jekyllbootstrap.com](http://jekyllbootstrap.com/).
 
 Jekyll is built on top of the Ruby programming language.  This is the first time I've worked with Ruby.  Jekyll uses Ruby substantially to generate static HTML webpages.
 
