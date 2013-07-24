@@ -1,0 +1,20 @@
+---
+layout: page
+title: TestHTML 
+header: Pages
+group: navigation
+---
+{% include JB/setup %}
+
+<h2>All Pages</h2>
+<ul>
+{% assign pages_list = site.pages %}
+{% include JB/pages_list %}
+</ul>
+
+{% highlight javascript %}
+var asdf ="qwerqwerq";
+function asdf(qwer){
+	alert(qwer)
+}
+{% endhighlight %}
