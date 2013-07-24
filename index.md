@@ -28,7 +28,7 @@ Jekyll is built on top of the Ruby programming language.  This is the first time
 - This is because its not hosted on a dynamic web server.
 
 - In order to have discussion threads, my options are limited.
- - I can use an AJAX service like [Disqus](http://disqus.com/).  But this is bad for SEO. 
- - I can use this [hack](http://theshed.hezmatt.org/jekyll-static-comments/), which pipes comments through email.  It's really clever and has some anti-spam utility.  It also preserves SEO.  The problem is that comments do not appear immediately so discussion is lagged.  
+  - I can use an AJAX service like [Disqus](http://disqus.com/).  But this is bad for SEO. 
+  - I can use this [hack](http://theshed.hezmatt.org/jekyll-static-comments/), which pipes comments through email.  It's really clever and has some anti-spam utility.  It also preserves SEO.  The problem is that comments do not appear immediately so discussion is lagged.  
 
 
