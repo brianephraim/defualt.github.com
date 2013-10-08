@@ -1,6 +1,7 @@
 ---
 layout: default
-title: My Blog
+title: Home
+header : Home
 ---
 
 <!-- This loops through the paginated posts -->
@@ -8,9 +9,7 @@ title: My Blog
   <!-- blog entry -->
   <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
   <p class="lead">by <a href="https://twitter.com/{{ site.author.twitter }}">{{ site.author.name }}</a></p>
-  <hr>
   <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date }}</p>
-  <hr>
   <p>{{ post.content }}</p>
   <a class="btn btn-primary" href="{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>       
   <hr>
@@ -19,27 +18,5 @@ title: My Blog
 {% endfor %}
 
 <!-- Pagination links -->
-<ul id="post-pagination" class="pagination">
-  {% if paginator.previous_page %}
-    <li><a href="/{{ paginator.previous_page_path }}">&laquo;</a></li>
-  {% else %}
-    <li class="disabled"><a href="#">&laquo;</a></li>
-  {% endif %}
-   {% if paginator.page == 1 %}
-        <li class="active"><a href="#">1</a></li>
-      {% else %}
-        <li><a href="/">1</a></li>
-      {% endif %}
-  {% for count in (2..paginator.total_pages) %}
-    {% if count == paginator.page %}
-      <li class="active"><a href="#">{{ count }}</a></li>
-    {% else %}
-      <li><a href="/page{{ count }}">{{ count }}</a></li>
-    {% endif %}
-  {% endfor %}
-  {% if paginator.next_page %}
-    <li><a href="/{{ paginator.next_page_path }}">&raquo;</a></li>
-  {% else %}
-    <li class="disabled"><a href="#">&raquo;</a></li>
-  {% endif %}
-</ul>
+
+{% include JB/pagination %}

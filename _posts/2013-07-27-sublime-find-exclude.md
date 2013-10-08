@@ -11,4 +11,4 @@ command-shift-f
 
 in the "where" field:
 
--foldername/*,-anotherfoldername/*
+-foldername/\*,-anotherfoldername/\*
