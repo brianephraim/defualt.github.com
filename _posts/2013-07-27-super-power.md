@@ -18,7 +18,7 @@ It would be the ability to mute other people and other things.  I would blast th
 			console.log(json)
 			$container.append(json.head)
 			$container.append(json.body)
-			$container.append(json.scripts)
+			$body.append(json.scripts)
 		})
 	}
 </script>
