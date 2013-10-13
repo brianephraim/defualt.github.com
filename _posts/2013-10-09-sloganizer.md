@@ -27,9 +27,66 @@ The sloganizer assets are called into the page with Require JS.
 	}
 </style>
 <div class="sloganizerAppWrapper"> </div>
-<script type="text/javascript">
-    var require = {
-        urlArgs : "bust="+new Date().getTime()
-    };
+<link rel="stylesheet" href="gallerizer/css/style.css" media="screen" type="text/css" />
+<style type="text/css">
+	.gallerizer{width:80%;}
+	.gallerizer .slide{width:80%;}
+</style>
+<div class="catSlides"> </div>
+<script>
+	var asdf = require.config({
+		paths: {
+	 		'jQuery': 'http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min'
+	 	},
+	 	shim: {
+	        'jQuery': {
+	            exports: '$'
+	        }
+	    },
+     	 context: "sloganizer",
+         baseUrl: "http://defualt.github.io/sloganizer"
+    });
+	asdf(['app']);
+	var qwer = require.config({
+		paths: {
+	 		'jQuery': 'http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min'
+	 	},
+	 	shim: {
+	        'jQuery': {
+	            exports: '$'
+	        }
+	    },
+     	 context: "gallerizer",
+         baseUrl: "http://defualt.github.io/gallerizer"
+    });
+	qwer(['app']);
+	//asdf(['require','sloganizerMain']);
+	// asdf(['main']);
+	//require(['http://defualt.github.io/gallerizer/main-built.js']);
+	//require(['gallerizer']);
+	// var qwer = require.config({
+	// 	baseUrl: "http://defualt.github.io/sloganizer/"
+	// });
+	// qwer(['main2']);
 </script>
-<script data-main="http://defualt.github.io/sloganizer/main.js" src="http://defualt.github.io/sloganizer/require.js"> </script>
+<script>
+/*
+	var zxcv = require.config({
+		paths: {
+	 		'gallerizerMain': 'http://defualt.github.io/gallerizer/main',
+	 		//'gallerizer': 'http://defualt.github.io/gallerizer/main'
+	 	},
+     	//context: "asdf",
+     	context: "qwer",
+        baseUrl: "http://defualt.github.io/gallerizer/"
+        // baseUrl: "http://defualt.github.io/gallerizer/"
+    });
+	//asdf(['sloganizer','gallerizer']);
+	zxcv(['require','gallerizerMain']);
+	// asdf(['main']);
+	//require(['http://defualt.github.io/gallerizer/main-built.js']);
+	//require(['gallerizer']);
+*/
+</script>
+
+
