@@ -3,7 +3,7 @@ layout: post
 title: "Sloganizer"
 description: ""
 category: 
-tags: [dev,animation,requirejs]
+tags: [dev,animation]
 ---
 {% include JB/setup %}
 
@@ -20,12 +20,6 @@ It resembles a slot machine.  Load word banks into it and have it generate rando
 	}
 </style>
 <div class="sloganizerAppWrapper"> </div>
-<link rel="stylesheet" href="gallerizer/css/style.css" media="screen" type="text/css" />
-<style type="text/css">
-	.gallerizer{width:80%;}
-	.gallerizer .slide{width:80%;}
-</style>
-<div class="catSlides"> </div>
 <script> 
 	inlineScript.sloganizer = require.config({
 		paths: {
