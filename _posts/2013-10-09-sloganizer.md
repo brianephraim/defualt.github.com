@@ -7,17 +7,10 @@ tags: [dev,animation,requirejs]
 ---
 {% include JB/setup %}
 
-Bellow is the sloganizer.
+The sloganizer is a javascript class that renders an animated feature component.
 
-Its asset repository is located here. [defualt.github.io/sloganizer/](http://defualt.github.io/sloganizer/)
+It resembles a slot machine.  Load word banks into it and have it generate random sentences.
 
-That repository is published with GitHub Pages (gh-pages).
-
-This blog is also published with GitHub (but with Jekyll blog instead).
-
-They share domain.
-
-The sloganizer assets are called into the page with Require JS.
 <style type="text/css">
 	.sloganizerAppWrapper{
 		width:90%;
@@ -33,8 +26,8 @@ The sloganizer assets are called into the page with Require JS.
 	.gallerizer .slide{width:80%;}
 </style>
 <div class="catSlides"> </div>
-<script>
-	var asdf = require.config({
+<script> 
+	inlineScript.sloganizer = require.config({
 		paths: {
 	 		'jQuery': 'http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min'
 	 	},
@@ -46,47 +39,5 @@ The sloganizer assets are called into the page with Require JS.
      	 context: "sloganizer",
          baseUrl: "http://defualt.github.io/sloganizer"
     });
-	asdf(['app']);
-	var qwer = require.config({
-		paths: {
-	 		'jQuery': 'http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min'
-	 	},
-	 	shim: {
-	        'jQuery': {
-	            exports: '$'
-	        }
-	    },
-     	 context: "gallerizer",
-         baseUrl: "http://defualt.github.io/gallerizer"
-    });
-	qwer(['app']);
-	//asdf(['require','sloganizerMain']);
-	// asdf(['main']);
-	//require(['http://defualt.github.io/gallerizer/main-built.js']);
-	//require(['gallerizer']);
-	// var qwer = require.config({
-	// 	baseUrl: "http://defualt.github.io/sloganizer/"
-	// });
-	// qwer(['main2']);
+	inlineScript.sloganizer(['app']);
 </script>
-<script>
-/*
-	var zxcv = require.config({
-		paths: {
-	 		'gallerizerMain': 'http://defualt.github.io/gallerizer/main',
-	 		//'gallerizer': 'http://defualt.github.io/gallerizer/main'
-	 	},
-     	//context: "asdf",
-     	context: "qwer",
-        baseUrl: "http://defualt.github.io/gallerizer/"
-        // baseUrl: "http://defualt.github.io/gallerizer/"
-    });
-	//asdf(['sloganizer','gallerizer']);
-	zxcv(['require','gallerizerMain']);
-	// asdf(['main']);
-	//require(['http://defualt.github.io/gallerizer/main-built.js']);
-	//require(['gallerizer']);
-*/
-</script>
-
-
