@@ -93,7 +93,7 @@ The accordionizer is a an accordionizer.
 <script> 
 	inlineScript.accordionizer = require.config({
 		paths: {
-	 		'jQuery': 'http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min'
+	 		'jQuery': '/accordionizer/jquery.min'
 	 	},
 	 	shim: {
 	        'jQuery': {
