@@ -8,12 +8,12 @@ tags: [dev,animation]
 {% include JB/setup %}
 
 The accordionizer is a an accordionizer. 
-<link rel="stylesheet" href="accordionizer/css/style.css" media="screen" type="text/css" />
+<link rel="stylesheet" href="/accordionizer/css/style.css" media="screen" type="text/css" />
 <div class="accordionizerDemoDivScrollParent">
 	<div class="topNavAndLogoEtc">Welcome to the smartaccordion page.</div>
 	<div class="bottomNavAndCopyrightEtc">Welcome to the smartaccordion page.</div>
 	<div class="col1">
-		<img src="accordionizer/guitarcat.jpg" />
+		<img src="/accordionizer/guitarcat.jpg" />
 	</div>
 	<div class="col2">
 		<ul class="accordionSpartacus">
