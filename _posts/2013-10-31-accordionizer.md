@@ -6,14 +6,27 @@ category:
 tags: [dev,animation]
 ---
 {% include JB/setup %}
+{{ page.url }}
+{{ page.url }}
+{{ page.categories }}
+zxcvzxcv
+{{ site.JB.WIDGET_PATH }}
+asdfqwer
 
-The accordionizer is a an accordionizer. 
-<link rel="stylesheet" href="/accordionizer/css/style.css" media="screen" type="text/css" />
-<div class="accordionizerDemoDivScrollParent">
+The accordionizer is a an accordionizer.. 
+<link rel="stylesheet" href="{{ site.JB.WIDGET_PATH }}/accordionizer/css/accordionizer.css" media="screen" type="text/css" />
+<link rel="stylesheet" href="{{ site.JB.WIDGET_PATH }}/accordionizer/css/app.css" media="screen" type="text/css" />
+<style>
+.accordionizerScrollDivDemoWrap{position:relative;top:0;}
+	.accordionizerScrollDivDemoWrap ul{
+		padding:0;
+	}
+</style>
+<div class="accordionizerScrollDivDemoWrap">
 	<div class="topNavAndLogoEtc">Welcome to the smartaccordion page.</div>
 	<div class="bottomNavAndCopyrightEtc">Welcome to the smartaccordion page.</div>
 	<div class="col1">
-		<img src="/accordionizer/guitarcat.jpg" />
+		<img src="{{ site.JB.WIDGET_PATH }}/accordionizer/guitarcat.jpg" />
 	</div>
 	<div class="col2">
 		<ul class="accordionSpartacus">
@@ -93,7 +106,7 @@ The accordionizer is a an accordionizer.
 <script> 
 	inlineScript.accordionizer = require.config({
 		paths: {
-	 		'jQuery': '/accordionizer/jquery.min'
+	 		'jQuery': '{{ site.JB.WIDGET_PATH }}/accordionizer/jquery.min'
 	 	},
 	 	shim: {
 	        'jQuery': {
@@ -101,7 +114,7 @@ The accordionizer is a an accordionizer.
 	        }
 	    },
      	 context: "accordionizer",
-         baseUrl: "http://defualt.github.io/accordionizer"
+         baseUrl: "{{ site.JB.WIDGET_PATH }}/accordionizer/"
     });
 	inlineScript.accordionizer(['app']);
 </script>
