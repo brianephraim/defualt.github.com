@@ -8,7 +8,7 @@ tags: [dev,animation]
 {% include JB/setup %}
 
 The gallerizer is a an image gallery.  It has a complex and strange animation for image transitions.
-<link rel="stylesheet" href="gallerizer/css/style.css" media="screen" type="text/css" />
+<link rel="stylesheet" href="/gallerizer/css/style.css" media="screen" type="text/css" />
 <style type="text/css">
 	.gallerizer{width:80%;}
 	.gallerizer .slide{width:80%;}
