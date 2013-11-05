@@ -1,0 +1,11 @@
+{% comment %}<!--
+The github_widget include is a helper for rendering info about a github widget repository.
+Usage:
+  1) Make a blog MD with head matter containing variables for git_widget_repo_name
+  2) include BE/github_widget
+  example:
+    {% include BE/github_widget %}
+  	
+-->{% endcomment %}
+<p><a href="https://github.com/{{site.JB.github_name}}/{{page.git_widget_repo_name}}">Github repo</a></p>
+<p><a href="http://{{site.JB.github_name}}.github.io/{{page.git_widget_repo_name}}">Standalone demo page</a></p>

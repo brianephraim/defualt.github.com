@@ -4,17 +4,16 @@ title: "Pesterizer"
 description: ""
 category: 
 tags: [dev,animation]
+git_widget_repo_name: "pesterizer"
 ---
+
 {% include JB/setup %}
-{{ page.url }}
-{{ page.url }}
-{{ page.categories }}
-zxcvzxcv
-{{ site.JB.WIDGET_PATH }}
-asdfqwer
 
-The pesterizer is a an pesterizer.. 
+Move your mouse within the box below.  A box trails the mouse.
 
+This script coule be used for a novel call to action in advertisement or promotion websites.
+
+{% include BE/github_widget %}
 
 <link rel="stylesheet" href="{{ site.JB.WIDGET_PATH }}/pesterizer/css/pesterizer.css" media="screen" type="text/css" />
 <link rel="stylesheet" href="{{ site.JB.WIDGET_PATH }}/pesterizer/css/app.css" media="screen" type="text/css" />
