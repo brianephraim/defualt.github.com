@@ -21,7 +21,7 @@ It's the Barndoorbuttonizer!
 <script> 
 	inlineScript.barndoorbuttonizer = require.config({
 		paths: {
-	 		'jQuery': '{{ site.JB.WIDGET_PATH }}/barndoorbuttonizer/jquery.min'
+	 		'jQuery': '{{ site.JB.WIDGET_PATH }}/barndoorbuttonizer/bower_components/jquery/jquery.min'
 	 	},
 	 	shim: {
 	        'jQuery': {
