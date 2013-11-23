@@ -25,7 +25,7 @@ The gallerizer is a an image gallery.  It has a complex and strange animation fo
 	        }
 	    },
      	 context: "gallerizer",
-         baseUrl: "http://defualt.github.io/gallerizer"
+         baseUrl: "{{ site.JB.WIDGET_PATH }}/gallerizer"
     });
 	inlineScript.gallerizer(['app']);
 </script>

@@ -31,7 +31,7 @@ It resembles a slot machine.  Load word banks into it and have it generate rando
 	        }
 	    },
      	 context: "sloganizer",
-         baseUrl: "http://defualt.github.io/sloganizer"
+         baseUrl: "{{ site.JB.WIDGET_PATH }}/sloganizer"
     });
 	inlineScript.sloganizer(['app']);
 </script>
