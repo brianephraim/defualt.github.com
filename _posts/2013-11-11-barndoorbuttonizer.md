@@ -18,7 +18,7 @@ description
 <div class="barndoorbuttonizerBlogWidgetWrap widgetWrap">
 	<div class="barndoorbuttonizerWidgetFrame">
 		<h1>Single-image barndoor button generator</h1>
-        <p>Click this image to use it as a sample: <img src="cloud.png" class="cloud" /> . See if you can get the red, green, and blue lines to repeat!</p>
+        <p>Click this image to use it as a sample: <img src="/barndoorbuttonizer/cloud.png" class="cloud" /> . See if you can get the red, green, and blue lines to repeat!</p>
         <div id="barndoorbuttonizerStatus">Or drag an image from you hard drive to the area below ...</div>
         <div id="barndoorbuttonizerDrop">Drop files here.</div>
         <div id="barndoorbuttonizerList"> </div>
