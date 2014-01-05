@@ -18,7 +18,7 @@ description
 <div class="barndoorbuttonizerBlogWidgetWrap widgetWrap">
 	<div class="barndoorbuttonizerWidgetFrame"> </div>
 </div>
-<script> 
+<script>//wtf 
 	inlineScript.barndoorbuttonizer = require.config({
 		paths: {
 	 		'jQuery': '{{ site.JB.WIDGET_PATH }}/barndoorbuttonizer/app/bower_components/jquery/jquery.min'
@@ -32,4 +32,4 @@ description
          baseUrl: "{{ site.JB.WIDGET_PATH }}/barndoorbuttonizer/app/"
     });
 	inlineScript.barndoorbuttonizer(['js/app']);
-</script>
+/*wtf*/</script>
