@@ -12,16 +12,22 @@ git_widget_repo_name: "barndoorbuttonizer"
 description
 
 {% include BE/github_widget2 %}
+<div>
 
 <link rel="stylesheet" href="{{ site.JB.WIDGET_PATH }}/barndoorbuttonizer/app/css/barndoorbuttonizer.css" media="screen" type="text/css" />
+
 <link rel="stylesheet" href="{{ site.JB.WIDGET_PATH }}/barndoorbuttonizer/app/css/app.css" media="screen" type="text/css" />
+
+</div>
+
 <div class="barndoorbuttonizerBlogWidgetWrap widgetWrap">
 	<div class="barndoorbuttonizerWidgetFrame"> </div>
 </div>
-<script>//wtf 
+
+<script>
 	inlineScript.barndoorbuttonizer = require.config({
 		paths: {
-	 		\"jQuery\": "{{ site.JB.WIDGET_PATH }}/barndoorbuttonizer/app/bower_components/jquery/jquery.min"
+	 		"jQuery": "{{ site.JB.WIDGET_PATH }}/barndoorbuttonizer/app/bower_components/jquery/jquery.min"
 	 	},
 	 	shim: {
 	        "jQuery": {
@@ -32,4 +38,4 @@ description
          baseUrl: "{{ site.JB.WIDGET_PATH }}/barndoorbuttonizer/app/"
     });
 	inlineScript.barndoorbuttonizer(["js/app"]);
-/*wtf*/</script>
+</script>
